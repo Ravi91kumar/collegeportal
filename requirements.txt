@@ -1,0 +1,7 @@
+
+flask
+pandas
+reportlab
+openpyxl
+gspread
+oauth2client
