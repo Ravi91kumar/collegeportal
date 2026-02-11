@@ -1,0 +1,23 @@
+
+<html>
+<head><title>Dashboard</title></head>
+<body>
+<h2 align="center">Hostel Dashboard</h2>
+
+<table border="1" width="80%" align="center">
+<tr><th>Field</th><th>Value</th></tr>
+{% for k,v in student.items() %}
+<tr><td>{{k}}</td><td>{{v}}</td></tr>
+{% endfor %}
+</table>
+
+<center>
+<p>Total: {{totals[0]}} |
+Paid: {{totals[1]}} |
+Due: {{totals[2]}}</p>
+
+<a href="/export"><button>Download PDF</button></a>
+</center>
+
+</body>
+</html>
